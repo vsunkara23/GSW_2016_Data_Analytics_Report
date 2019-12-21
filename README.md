@@ -1,4 +1,4 @@
-Vishal Sunkara
+Author: Vishal Sunkara
 ==========================================================================================
 
 An Analysis of the Golden State Warriors Players from the 2016 Season 
