@@ -1,13 +1,13 @@
 Author: Vishal Sunkara
 ==========================================================================================
 
-Visualization & Analysis of Golden State Warriors' Players from the 2016 Season Using R
+Visualization & Analysis of Golden State Warriors' Players from the 2016 Season 
 ==========================================================================================
 
 Background
 ----------
 
-2016-2017 was an exciting season in the NBA. The addition of Kevin Durant that season in the Golden State Warriors that already had other superstar players like Stephen Curry, Klay Thompson, and Draymond Green made this season a very interesting subject to study and visualize. The study I pursued was to determine what type of shooting was critical for the success of the players and which of those shootings made one player more successful than the other in the team. For this, I will be visualizing a shot chart based on data from stats.nba.com. The players I am going to choose for this project are Stephen Curry, Kevin Durant, Klay Thompson, Draymond Green, and Andre Iguodala.   
+2016-2017 was an exciting season in the NBA. The addition of Kevin Durant that season in the Golden State Warriors that already had other superstar players like Stephen Curry, Klay Thompson, and Draymond Green made this season a very interesting subject to study and visualize. The study I pursued was to determine what type of shooting was critical for the success of the players and which of those shootings made one player more successful than the other in the team. For this, I will be visualizing a shot chart based on data from stats.nba.com and analyze it through the R programming Language. The players I am going to choose for this project are Stephen Curry, Kevin Durant, Klay Thompson, Draymond Green, and Andre Iguodala.   
 
 Here is some background information on the players at the time of the 2016 NBA Season that I am researching. A player's shooting position can be affected by their role on the court and their physical characteristics. Thus, it will be important to take these details into consideration as it will make an impact on our analysis of the visualized data and the insights that are implied from it.
 
