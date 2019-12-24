@@ -26,3 +26,24 @@ ggplot(data = new_df) +
   ggtitle("2016 Season Golden State Warriors Players' Shot Charts") +
   labs(caption = "Visualization by: Vishal Sunkara\nSource: stats.nba.com") +
   theme_minimal() + facet_wrap(Player ~.)
+
+# Analysis
+temp_df <- read.csv("/data_extracted/GSW_Players_Shot_Data.csv", stringsAsFactors = F)
+shot_two <- select(filter(temp_df, Shot_Point == "2PT Field Goal"), Player, Shot)
+points_two = shot_two %>%
+  group_by(Player) %>%
+  summarise(Total = n(), Shots_Made = sum(Shot == "Yes")) 
+points_two <- arrange(mutate(points_two, Shots_Made_Percentage = round((Shots_Made/Total)*100)), desc(Shots_Made_Percentage))
+points_two <- as.data.frame(points_two)
+shot_three <- select(filter(temp_df, Shot_Point == "3PT Field Goal"), Player, Shot)
+points_three = shot_three %>%
+  group_by(Player) %>%
+  summarise(Total = n(), Shots_Made = sum(Shot == "Yes")) 
+points_three <- arrange(mutate(points_three, Shots_Made_Percentage = round((Shots_Made/Total)*100)), desc(Shots_Made_Percentage))
+points_three <- as.data.frame(points_three)
+all <- select(temp_df, Player, Shot)
+all_points = all %>%
+  group_by(Player) %>%
+  summarise(Total = n(), Shots_Made = sum(Shot == "Yes")) 
+all_points <- arrange(mutate(all_points, Shots_Made_Percentage = round((Shots_Made/Total)*100)), desc(Shots_Made_Percentage))
+all_points <- as.data.frame(all_points)
