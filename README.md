@@ -51,13 +51,14 @@ and filled empty cells with NA. I had 5 csv files in total and this data contain
 
 ``` r
 # Defining types for each column in the csv. 
-columns_in_csv = c("character", "character", "integer", "integer", "integer", "integer", "factor","character","factor","integer","character", "integer", "integer")
+columns_in_csv = c("character", "character", "integer", "integer", "integer", "integer", "factor",
+"character","factor","integer","character", "integer", "integer")
 # Reading from csv files for each player into dataframes. 
-steph_curry <- read.csv("data_extracted/stephen-curry.csv", stringsAsFactors = F, colClasses = columns_in_csv)
-kevin_durant <- read.csv("data_extracted/kevin-durant.csv", stringsAsFactors = F, colClasses = columns_in_csv)
-klay_thompson <- read.csv("data_extracted/klay-thompson.csv", stringsAsFactors = F, colClasses = columns_in_csv)
-draymond_green <- read.csv("data_extracted/draymond-green.csv", stringsAsFactors = F, colClasses = columns_in_csv)
-andre_iguodala <- read.csv("data_extracted/andre-iguodala.csv", stringsAsFactors = F, colClasses = columns_in_csv)
+steph_curry <- read.csv("data_extracted/stephen-curry.csv")
+kevin_durant <- read.csv("data_extracted/kevin-durant.csv")
+klay_thompson <- read.csv("data_extracted/klay-thompson.csv")
+draymond_green <- read.csv("data_extracted/draymond-green.csv")
+andre_iguodala <- read.csv("data_extracted/andre-iguodala.csv")
 
 # This gives the name of the variables in the spreadsheets of the csv files.
 names(steph_curry)
